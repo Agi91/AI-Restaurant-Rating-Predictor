@@ -1,180 +1,207 @@
-🍽 AI Restaurant Rating Predictor
-Project Overview
+# 🍽 AI Restaurant Rating Predictor
 
-AI Restaurant Rating Predictor is a Machine Learning project designed to predict the aggregate rating of a restaurant based on various factors such as location, cuisine type, cost for two people, customer votes, and service features like online delivery and table booking.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-red)
 
-The goal of this project is to demonstrate how machine learning can analyze restaurant data and estimate customer ratings before users even visit the restaurant.
+---
 
-The project includes a complete machine learning workflow:
+# 📌 Project Overview
 
-Data preprocessing
+**AI Restaurant Rating Predictor** is a Machine Learning project designed to predict the **aggregate rating of a restaurant** using various restaurant features such as location, cuisine type, cost for two people, customer votes, and service options.
 
-Feature engineering
+The project demonstrates a complete **end-to-end machine learning workflow**, including:
 
-Model training
+- Data preprocessing
+- Feature engineering
+- Model training
+- Model evaluation
+- Interactive dashboard deployment
 
-Model evaluation
+An interactive **Streamlit dashboard** allows users to enter restaurant details and instantly receive predicted ratings along with visual insights.
 
-Interactive web application
+This project showcases practical skills in **machine learning, data preprocessing, model evaluation, and building interactive data applications**.
 
-A Streamlit-based web dashboard was built to allow users to input restaurant information and instantly receive a predicted rating along with visual insights.
+---
 
-This project demonstrates practical skills in data analysis, machine learning modeling, and building interactive ML applications, making it a strong portfolio project for showcasing data science and machine learning capabilities.
+# ❓ Key Questions Explored
 
-Key Questions Explored
+- Which factors influence restaurant ratings the most?
+- Does **average cost for two** affect ratings?
+- Do **online delivery and table booking** impact customer satisfaction?
+- How do **customer votes** influence restaurant ratings?
+- How do ratings vary across different **cities**?
 
-Which factors influence restaurant ratings the most?
+---
 
-Does cost for two affect restaurant ratings?
+# 🛠 Technologies & Tools Used
 
-Do online delivery and table booking impact customer satisfaction?
+| Tool | Purpose |
+|-----|------|
+| Python | Core programming language |
+| Pandas | Data analysis and preprocessing |
+| NumPy | Numerical computations |
+| Scikit-learn | Machine learning models |
+| Streamlit | Interactive dashboard |
+| Plotly | Data visualization |
+| Git & GitHub | Version control |
 
-How do customer votes influence ratings?
+---
 
-How do restaurant ratings vary across different cities?
+# 📊 Dataset
 
-Technologies & Tools Used
-Tool	Purpose
-Python	Core programming language
-Pandas	Data processing and analysis
-NumPy	Numerical computations
-Scikit-learn	Machine learning algorithms
-Streamlit	Interactive web dashboard
-Plotly	Data visualizations
-Git & GitHub	Version control and project hosting
-Dataset
+**File in Repository**
 
-File in Repository:
+```
 dataset.csv
+```
 
-The dataset contains information about restaurants including their services, pricing, location, and customer engagement metrics.
+The dataset contains information about restaurants including pricing, services, and customer engagement metrics.
 
-Key Columns
+### Important Features
 
-Restaurant Name
+- City
+- Cuisines
+- Average Cost for Two
+- Has Table Booking
+- Has Online Delivery
+- Votes
+- Aggregate Rating
 
-City
+These features are used to train a machine learning model that predicts restaurant ratings.
 
-Cuisines
+---
 
-Average Cost for Two
+# 📂 Project Structure
 
-Has Table Booking
-
-Has Online Delivery
-
-Votes
-
-Aggregate Rating
-
-These features are used to train a machine learning model that predicts the expected rating of a restaurant.
-
-Project Structure
+```
 AI-Restaurant-Rating-Predictor
 │
 ├── dataset.csv
-│
 ├── model.py
-│
 ├── model.pkl
-│
 ├── app.py
-│
 ├── style.css
-│
 ├── requirements.txt
-│
 └── README.md
-Folder Details
+```
 
-dataset.csv
+### Folder Details
+
+**dataset.csv**  
 Restaurant dataset used for training the machine learning model.
 
-model.py
+**model.py**  
 Script used for data preprocessing and model training.
 
-model.pkl
+**model.pkl**  
 Saved trained machine learning model used for predictions.
 
-app.py
+**app.py**  
 Streamlit web application for user interaction and predictions.
 
-style.css
+**style.css**  
 Custom styling used to improve the UI of the dashboard.
 
-requirements.txt
+**requirements.txt**  
 Python dependencies required to run the project.
 
-Machine Learning Model
+---
 
-The project experiments with multiple regression models to predict restaurant ratings.
+# 🤖 Machine Learning Model
 
-Models Tested
+The project evaluates multiple regression models to predict restaurant ratings.
 
-Linear Regression
+### Models Tested
 
-Decision Tree Regressor
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
 
-Random Forest Regressor
+Among these models, **Random Forest Regressor** performed best in predicting restaurant ratings by capturing complex relationships between the features.
 
-Among these models, Random Forest Regressor performed better in capturing relationships between features and predicting restaurant ratings more accurately.
+The trained model was saved as:
 
-The trained model was then saved as a .pkl file and integrated into the Streamlit application for real-time predictions.
+```
+model.pkl
+```
 
-Features of the Web App
+and integrated into the Streamlit application for real-time predictions.
+
+---
+
+# 🌐 Features of the Web Application
 
 The Streamlit dashboard allows users to:
 
-Select City
+- Select **City**
+- Enter **Average Cost for Two**
+- Enter **Customer Votes**
+- Select **Online Delivery Availability**
+- Select **Table Booking Availability**
 
-Enter Average Cost for Two
+### Dashboard Features
 
-Input Customer Votes
+- ⭐ Star Rating Display
+- 🍔 Restaurant Result Card
+- 📊 Feature Importance Graph
+- 📈 Interactive Charts
 
-Choose Online Delivery Availability
+---
 
-Choose Table Booking Availability
+# ▶ Running the Project Locally
 
-The model then predicts the expected restaurant rating instantly.
+### 1️⃣ Clone the Repository
 
-Additional Visual Features
-
-⭐ Star rating display
-
-🍔 Restaurant style result card
-
-📊 Feature importance graph
-
-📈 Interactive charts using Plotly
-
-Running the Project Locally
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/Agi91/AI-Restaurant-Rating-Predictor.git
-2️⃣ Navigate to the Project Folder
+```
+
+### 2️⃣ Navigate to the Project Folder
+
+```bash
 cd AI-Restaurant-Rating-Predictor
-3️⃣ Install Dependencies
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-4️⃣ Run the Streamlit Application
+```
+
+### 4️⃣ Run the Streamlit Application
+
+```bash
 streamlit run app.py
-5️⃣ Open in Browser
+```
+
+### 5️⃣ Open in Browser
+
+```
 http://localhost:8501
+```
 
-You will see the Restaurant Rating Prediction Dashboard.
+You will see the **Restaurant Rating Prediction Dashboard**.
 
-Future Improvements
+---
 
-Add deep learning models
+# 🚀 Future Improvements
 
-Improve UI with advanced dashboards
+- Improve dashboard UI
+- Add deep learning models
+- Integrate real-time restaurant APIs
+- Deploy on cloud platforms
 
-Integrate real restaurant APIs
+---
 
-Deploy on cloud platforms
+# 👨‍💻 Author
 
-Author
-
-AI Restaurant Rating Predictor
+**AI Restaurant Rating Predictor**  
 Machine Learning Project
 
-GitHub Repository
+GitHub Repository  
 https://github.com/Agi91/AI-Restaurant-Rating-Predictor
+
+---
+
+⭐ Built with **Python, Machine Learning, and Streamlit**
