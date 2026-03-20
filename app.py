@@ -13,50 +13,8 @@ st.set_page_config(page_title="AI Restaurant Rating Dashboard",layout="wide")
 # -----------------------------
 # Custom UI (Black Gradient)
 # -----------------------------
-st.markdown("""
-<style>
-
-/* Main Background */
-
-.stApp{
-background-color:#ffffff;
-color:#1f2937;
-}
-
-/* Sidebar */
-
-section[data-testid="stSidebar"]{
-background:#f3f4f6;
-}
-
-/* Headings */
-
-h1,h2,h3{
-color:#111827;
-font-weight:700;
-}
-
-/* Metrics Cards */
-
-[data-testid="metric-container"]{
-background:white;
-padding:18px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* Restaurant Card */
-
-.restaurant-card{
-background:white;
-padding:20px;
-border-radius:14px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-
-</style>
-""",unsafe_allow_html=True)
-
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 # -----------------------------
 # Load Model
 # -----------------------------
