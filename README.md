@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+````markdown
+
 # 🍽 AI Restaurant Rating Predictor
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
